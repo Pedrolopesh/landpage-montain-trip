@@ -1,6 +1,6 @@
 .headerGridLayout {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     max-width: 100%;
     width: 100%;
 }
@@ -15,12 +15,6 @@
     margin: 0;
     color: white;
     font-family: math;
-}
-
-.headerItensGrid:nth-child(2) > a {
-    color: white;
-    text-decoration: revert;
-    padding: 5px;
 }
 
 .headerItensGrid:nth-child(3) {
@@ -76,19 +70,60 @@
     font-size: 5rem;
 }
 
+.perfectButtonHEader {
+    display: flex;
+    width: 155px;
+    background-color: #638dc7;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    transform: translate(0px, 0px);
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.perfectButtonHEader > svg {
+    margin-right: 10px;
+}
+
+.perfectButtonHEader > span {
+    color: white;
+    font-size: 0.8rem;
+}
+
+.perfectButtonHEader:hover {
+    transform: translate(5px, -5px);
+}
+
+
 @media screen and (max-width: 800px) {
     .containerTitleMainBanner > h1 {
-        font-size: 1rem;
+        font-size: 3rem;
     }
 
     .headerItensGrid > h1 {
         font-size: 1rem;
     }
+
+    .headerItensGrid:nth-child(2) {
+        display: none;
+    }
+
     .headerItensGrid:nth-child(3) > a {
         font-size: 0.9rem;
     }
 
     .headerItensGrid:nth-child(3) > svg {
         margin-right: 2px;
+    }
+
+    .perfectButtonHEader{
+        background-color: #7c96bb;
+    }
+
+    .headerGridLayout {
+        grid-template-columns: auto auto;
     }
 }

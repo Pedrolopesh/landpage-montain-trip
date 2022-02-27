@@ -1,0 +1,47 @@
+.containerLeftLinks {
+    display: block;
+    position: fixed;
+    max-width: 50px;
+    width: 100%;
+    z-index: 21;
+    justify-content: center;
+    text-align: center;
+    top: 190px;
+    background-color: rgba(25,2,47,0.2);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 7px;
+    margin-left: 20px;
+}
+
+.itemLink {
+    display: block;
+    margin: 20px auto;
+    transition: all 0.2s ease-in-out;
+    transform: translate(0px, 0px);
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.itemLink > svg {
+    color: white;
+}
+
+.itemLink:hover {
+    transform: translate(5px, -5px);
+}
+
+@media screen and (max-width: 800px) {
+    .containerLeftLinks{
+        display: flex;
+        max-width: 100%;
+        width: 95%;
+        top: 0;
+        margin: 10px 5px 10px 10px;
+    }
+
+    .itemLink {
+        margin: 10px 5px;
+    }
+}

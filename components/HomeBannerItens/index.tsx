@@ -10,14 +10,10 @@ const HomeBannerItens = () => {
                 </div>
 
                 <div className={Styles.headerItensGrid}>
-                    <a href="" target='_blank'> About us</a>
-                    <span style={{ color: '#fff'}}>|</span>
-                    <a href="" target='_blank'> Creator </a>
-                </div>
-
-                <div className={Styles.headerItensGrid}>
-                    <ImNewspaper size={30} color="#fff" />
-                    <a href="" target='_blank' > News Letter </a>
+                    <button className={Styles.perfectButtonHEader}>
+                        <ImNewspaper size={30} color="#fff" />
+                        <span>News Letter</span>
+                    </button>
                 </div>
             </div>
 

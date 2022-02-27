@@ -21,6 +21,9 @@
   background-color: #0B1D26;
   padding: 10px;
   margin-top: 100px;
+  max-width: 100%;
+  width: 70%;
+  margin: 100px auto;
 }
 
 .flexLayoutCards:nth-child(2) {
@@ -42,7 +45,7 @@
 
 .letterHeaderCard {
   opacity: 0.2;
-  font-size: 8em;
+  font-size: 6em;
   color: white;
   margin: 0 20px;
   font-family: monospace !important;
@@ -82,6 +85,9 @@
  .containerContentCard{
     text-align: justify;
     color: white;
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+
  }
 
 .numberCardText{
@@ -166,6 +172,14 @@
     padding: 10px;
   }
 
+  .containerImageCard > img {
+    width: 90%;
+  }
+
+  .flexLayoutCards {
+    width: 95%;
+  }
+  
   .contentCard { 
     padding: 10px;
    }
