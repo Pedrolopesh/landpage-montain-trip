@@ -1,0 +1,94 @@
+.headerGridLayout {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    max-width: 100%;
+    width: 100%;
+}
+
+.headerItensGrid {
+    padding: 20px;
+    text-align: center;
+}
+
+.headerItensGrid:nth-child(1) > h1 {
+    text-align: initial;
+    margin: 0;
+    color: white;
+    font-family: math;
+}
+
+.headerItensGrid:nth-child(2) > a {
+    color: white;
+    text-decoration: revert;
+    padding: 5px;
+}
+
+.headerItensGrid:nth-child(3) {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.headerItensGrid:nth-child(3) > svg {
+    margin-right: 10px;
+}
+
+.headerItensGrid:nth-child(3) > a {
+    text-align: end;
+    color: white;
+    font-size: 1.54rem;
+}
+
+.containerBannerItem {
+    display: block;
+    padding: 10px;
+    margin: 50px auto;
+    max-width: 100%;
+    width: 80%;
+}
+
+.containerDashItemBanner {
+    display: flex;
+    align-items: center;
+}
+
+.dashTitleBanner{
+    width: 50px;
+    height: 0;
+    border-color: #FBD784;
+    margin: 0 10px;
+}
+
+.nextDashTitleBanner {
+    font-family: Roboto;
+    color: #FBD784;
+    font-size: 2.2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.containerTitleMainBanner {
+    display: block;
+}
+
+.containerTitleMainBanner > h1 {
+    text-align: start;
+    color: white;
+    font-size: 5rem;
+}
+
+@media screen and (max-width: 800px) {
+    .containerTitleMainBanner > h1 {
+        font-size: 1rem;
+    }
+
+    .headerItensGrid > h1 {
+        font-size: 1rem;
+    }
+    .headerItensGrid:nth-child(3) > a {
+        font-size: 0.9rem;
+    }
+
+    .headerItensGrid:nth-child(3) > svg {
+        margin-right: 2px;
+    }
+}
