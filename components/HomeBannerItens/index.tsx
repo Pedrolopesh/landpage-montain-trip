@@ -1,7 +1,10 @@
 import Styles from '../../styles/HomeBannerItens.module.css'
 import { ImNewspaper } from 'react-icons/im'
+import { useTranslation } from "react-i18next";
 
 const HomeBannerItens = () => {
+    const { t } = useTranslation();
+
     return (
         <div>
             <div className={Styles.headerGridLayout}>
@@ -12,7 +15,7 @@ const HomeBannerItens = () => {
                 <div className={Styles.headerItensGrid}>
                     <button className={Styles.perfectButtonHEader}>
                         <ImNewspaper size={30} color="#fff" />
-                        <span>News Letter</span>
+                        <span className={Styles.mainBannerLabel}>News Letter</span>
                     </button>
                 </div>
             </div>
@@ -24,7 +27,7 @@ const HomeBannerItens = () => {
                 </div>
 
                 <div className={Styles.containerTitleMainBanner}>
-                    <h1>Be prepared for the Mountains and beyond!</h1>
+                    <h1>{t('welcome_bg_title')}</h1>
                 </div>
             </div>
         </div>

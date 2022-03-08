@@ -5,8 +5,6 @@ import LefttLinks from '../LefttLinks'
 import type { IHomePropsItens } from '../../typings/mainTypes'
 
 const HomeBanner = ({ imageBanner, imageBanner_mobile}: IHomePropsItens) => {
-    console.info(imageBanner)
-
     const [windowWidth, setWindowWidth] = useState(0);
     const [offSet, setOffSet] = useState(0);
     const handleScroll = () => setOffSet(window.pageYOffset)
