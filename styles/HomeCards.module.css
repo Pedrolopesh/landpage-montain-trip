@@ -1,0 +1,122 @@
+
+    .containerFirstItemCard {
+        display: flex;
+        align-items: center;
+    }
+
+    .numberCardText{
+        display: block;
+        margin: -250px -70px 0px -20px;
+    }
+
+    .letterHeaderCard {
+        opacity: 0.2;
+        font-size: 6em;
+        color: white;
+        margin: 0 20px;
+        font-family: monospace !important;
+    }
+    
+    .containerCardContent{
+        display: block;
+        padding: 10px;
+        margin: 30px 30px 0 -20px;
+    }
+
+
+    .containerContentTitleCard {
+        display: flex;
+        align-items: center;
+    }
+
+    .dashCardTitle {
+        width: 50px;
+        height: 0;
+        border-color: #FBD784;
+        margin: 0 10px;
+    }
+
+    .nextDashTitleCardd {
+        color: #FBD784;
+        text-align: start;
+     }
+
+    .containerContentCard{
+        text-align: justify;
+        color: white;
+        font-size: 1.4rem;
+        font-family: 'Poppins', sans-serif;
+     }
+
+    .containerCards{
+        margin-top: 200px;
+        display: block;
+    }
+
+    .flexLayoutCards {
+        display: flex;
+        background-color: #0B1D26;
+        padding: 10px;
+        margin-top: 100px;
+        max-width: 100%;
+        width: 70%;
+        margin: 100px auto;
+    }
+
+    .flexLayoutCards:nth-child(2) {
+        flex-direction: row-reverse;
+    }
+    
+    .containerImageCard{
+        display: block;
+        max-width: 100%;
+        width: 100%;
+       }
+      
+       .containerImageCard > img {
+        display: block;
+        max-width: 100%;
+        width: 100%;
+       }
+
+    @media screen and (max-width: 1100px) {
+        .containerCardContent {
+            margin: 30px 30px 0 -20px;
+            width: 100%;
+        }
+
+        .flexLayoutCards {
+            flex-direction: column-reverse;
+        }
+        
+        .flexLayoutCards:nth-child(2) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        .numberCardText{
+            margin: -385px -80px 0px -25px;
+        }
+
+        .containerContentCard{
+            font-size: 1.3rem;
+            padding: 10px;
+        }
+
+        .letterHeaderCard {
+            opacity: 0.2;
+            font-size: 3rem;
+            color: white;
+            margin: 0 20px;
+            font-family: monospace;
+        }
+
+        .containerCardContent {
+            margin: 0;
+        }
+
+        .flexLayoutCards {
+            width: 95%;
+        }
+    }

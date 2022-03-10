@@ -1,0 +1,39 @@
+    .containerFullBanner {
+        display: block;
+    }
+
+    .containerFullBanner img {
+        display: block;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .containerBannerLayout {
+        display: block;
+    }
+
+    .coverBg {
+        display: block;
+        position: relative;
+        top: 0;
+        max-width: 100%;
+        width: 100%;
+        height: 100vh;
+        background: url('https://res.cloudinary.com/publi-node-uploads/image/upload/v1646877024/landing-montain/main-bg_a6pzjs.png') no-repeat top;
+        z-index: 9;
+    }
+
+   .containerItensBanner{
+        position: absolute;
+        display: block;
+        top: 10px;
+        max-width: 100%;
+        width: 100%;
+        z-index: 11;
+    }
+
+    @media screen and (max-width: 800px) {
+        .coverBg {
+            background: url('https://res.cloudinary.com/publi-node-uploads/image/upload/v1645979487/landing-montain/BG_mobile_1_v0gb64.png') no-repeat top;
+        }
+    }

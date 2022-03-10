@@ -1,4 +1,4 @@
-import Styles from '../../styles/Home.module.css'
+import Styles from '../../styles/HomeCards.module.css'
 import type { ICardContent } from '../../typings/mainTypes'
 
 const HomeCards = () => {

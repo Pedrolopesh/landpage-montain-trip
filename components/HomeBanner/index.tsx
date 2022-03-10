@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import Style from '../../styles/Home.module.css'
+import Style from '../../styles/HomeBanner.module.css'
 import HomeBannerItens from '../HomeBannerItens'
 import LefttLinks from '../LefttLinks'
 import type { IHomePropsItens } from '../../typings/mainTypes'
 
-const HomeBanner = ({ imageBanner, imageBanner_mobile}: IHomePropsItens) => {
+const HomeBanner = ({ imageBanner_mobile}: IHomePropsItens) => {
     const [windowWidth, setWindowWidth] = useState(0);
     const [offSet, setOffSet] = useState(0);
     const handleScroll = () => setOffSet(window.pageYOffset)
@@ -23,11 +23,11 @@ const HomeBanner = ({ imageBanner, imageBanner_mobile}: IHomePropsItens) => {
     return (
         <>
             <LefttLinks windowWidth={windowWidth} />
-            <div style={{ transform:`translateY(${ offSet * 0.15 }px)` }} className={Style.containerFullBanner}> 
+            <div style={{ transform:`translateY(${ offSet * 0.4 }px)` }} className={Style.containerFullBanner}> 
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <div className={Style.containerBannerLayout}>
                     <div className={Style.coverBg}></div>
-                    <img src={windowWidth > 900 ? imageBanner : imageBanner_mobile} alt="montain pic" className={Style.imageBG} />
+                    {/* <img src={windowWidth > 900 ? imageBanner : imageBanner_mobile} alt="montain pic" className={Style.imageBG} /> */}
                 </div>
                 <div className={Style.containerItensBanner}>
                     <HomeBannerItens />

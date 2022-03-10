@@ -3,6 +3,7 @@ import HomeBanner from '../components/HomeBanner'
 import HomeCards from '../components/HomeCards'
 import Footer from '../components/Footer'
 import Head from 'next/head'
+import Styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
   return (
@@ -16,17 +17,20 @@ const Home: NextPage = () => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
+      <div>
+
       <HomeBanner 
         imageBanner={'https://res.cloudinary.com/publi-node-uploads/image/upload/v1645972762/landing-montain/BG_3_czaot1.png'} 
         imageBanner_mobile={'https://res.cloudinary.com/publi-node-uploads/image/upload/v1645979487/landing-montain/BG_mobile_1_v0gb64.png'}
       />
-      <div>
-        <HomeCards />
       </div>
 
-      <div>
+      <div className={Styles.containerSectionHomePage}>
+        <HomeCards />
         <Footer />
       </div>
+
+
     </div>
   )
 }
