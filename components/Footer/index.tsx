@@ -5,15 +5,15 @@ const Footer = () => {
         <div>
             <div className={Styles.footerGridLayout}>
                 <div className={Styles.footerItemGridLeft}>
-                    <h1>MNTN</h1>
+                    <h1>TRIPER</h1>
                     <p>{'Get out there & discover your next slope, mountain & destination!'}</p>
-                    <p className={Styles.copyRightItem}>{'Copyright 2019 MNTN, Inc. Terms & Privacy '}</p>
+                    <p className={Styles.copyRightItem}>{'Copyright 2019 TRIPER, Inc. Terms & Privacy '}</p>
                 </div>
 
                 <div className={Styles.footerItemGridRigth}>
                     <div className={Styles.containerBlockLinks}>
                         <h1>More on The Blog</h1>
-                        <p>About MNTN</p>
+                        <p>About TRIPER</p>
                         <p>{'Contributors & Writers'}</p>
                         <p>{'Write For Us'}</p>
                         <p>{'Contact Us'}</p>
@@ -21,7 +21,7 @@ const Footer = () => {
                     </div>
 
                     <div className={Styles.containerBlockLinks}>
-                        <h1>More on MNTN</h1>
+                        <h1>More on TRIPER</h1>
                         <p>{'The Team'}</p>
                         <p>{'Jobs'}</p>
                         <p>{'Press'}</p>

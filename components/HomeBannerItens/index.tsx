@@ -9,7 +9,7 @@ const HomeBannerItens = () => {
         <div>
             <div className={Styles.headerGridLayout}>
                 <div className={Styles.headerItensGrid}>
-                    <h1>MNTN</h1>
+                    <h1>TRIPER</h1>
                 </div>
 
                 <div className={Styles.headerItensGrid}>

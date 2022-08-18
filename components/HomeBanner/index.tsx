@@ -26,8 +26,14 @@ const HomeBanner = ({ imageBanner_mobile}: IHomePropsItens) => {
             <div style={{ transform:`translateY(${ offSet * 0.4 }px)` }} className={Style.containerFullBanner}> 
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <div className={Style.containerBannerLayout}>
-                    <div className={Style.coverBg}></div>
+                    {/* <div className={Style.coverBg}></div> */}
                     {/* <img src={windowWidth > 900 ? imageBanner : imageBanner_mobile} alt="montain pic" className={Style.imageBG} /> */}
+                    <video 
+                        src="https://res.cloudinary.com/publi-node-uploads/video/upload/v1660797187/portfolio/aurora_rmxnjo.mp4"
+                        autoPlay 
+                        muted 
+                        loop
+                    ></video>
                 </div>
                 <div className={Style.containerItensBanner}>
                     <HomeBannerItens />
