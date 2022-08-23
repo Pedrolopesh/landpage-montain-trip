@@ -5,8 +5,8 @@ export interface IHomePropsItens {
 
 export interface ICardContent {
     index?: number
-    dashTitle?: string
-    titleCard?: string
-    contentCard?: string
+    dashTitle: string
+    titleCard: string
+    contentCard: string
     imageCard?: string
 }

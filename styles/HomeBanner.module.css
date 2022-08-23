@@ -12,6 +12,10 @@
         display: block;
     }
 
+    .containerBannerLayout > video {
+        max-width: 100%;
+    }
+
     .coverBg {
         display: block;
         position: relative;

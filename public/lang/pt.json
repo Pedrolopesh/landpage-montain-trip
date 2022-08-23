@@ -1,3 +1,32 @@
 {
-    "welcome_bg_title": "The Best Tour Tips for the Far North of the Earth!"
+    "tag_title": "Seu site de viagens",
+    "welcome_bg_title": "As melhores dicas de turismo para o Extremo Norte da Terra!",
+
+    "card_trips": {
+        "card_pre_title_1": "Um destino para o céu",
+        "card_title_1": "Janela do Céu (MG)",
+        "card_description_1": "A Trilha do Circuito Janela do Céu é um das atrações que estão no Parque Estadual do Ibitipoca, em Minas Gerais, e proporciona uma das mais belas vistas do estado, com vegetação e montanhas. Se estiver voluntariando por lá, vai ficar ainda mais fácil explorar a trilha durante a sua folga. <br><br> A caminhada é de pelos 8 km até chegar ao miradouro, que fica em cima de uma cachoeira em meio a paisagens incríveis, fazem valer a pena cada passo dado ao longo do caminho. A trilha não tem muitos obstáculos, mas algumas partes são íngremes e pode se tornar muito cansativa para quem não tem experiência.",
+        
+        "card_pre_title_2": "Seu primeiro destino",
+        "card_title_2": "Monte Roraima (RO)",
+        "card_description_2": "A montanha fica localizada entre as fronteiras do Brasil, Venezuela e Guiana e é umas das sete mais altas do país. Na área existe um mix de falésias, cavernas, floresta tropical na base e planalto no topo, mas muitas partes deste paraíso brasileiro ainda é inexplorada. <br><br> Existem diferentes tipos de expedições pelo Monte Roraima, que podem durar até sete dias entre subida e descida do pico. Porém, no caminho dá para conhecer pontos importantes do monte como a Tríplice Fronteira e Mirante do índio, por exemplo.",
+        
+        "card_pre_title_3": "Um destino ao topo",
+        "card_title_3": "Pico Paraná (PR)",
+        "card_description_3": "Considerada a montanha mais alta do Sul do Brasil, o Pico Paraná está no meio da Mata Atlântica na Serra do Mar. A trilha até a Pedra do Cume é bem sinalizada, não é nada muito complicado, mas é necessário preparo físico dos aventureiros. <br> <br> Na trilha existem aparatos como cordas para ajudar quem tenha alguma dificuldade no deslocamento. Também é possível acampar no local."
+    },
+
+    "footer_disclaimer": "Saia e descubra sua próxima encosta, montanha e destino!",
+    "footer_links": {
+        "More_on_The_Blog": "Mais no Blog",
+        "About_TRIPER": "Sobre TRIPER",
+        "contributors_writers": "Colaboradores e escritores",
+        "write_for_us": "Escreva para nós",
+        "contact_us": "Contate-nos",
+        "privacy_policy": "Política de Privacidade",
+        "more_on_TRIPER": "Mais Sobre TRIPER",
+        "the_team": "Nosso Time",
+        "Jobs": "Trabalhos",
+        "Press": "Imprensa"
+    }
 }

@@ -1,3 +1,32 @@
 {
-    "welcome_bg_title": "Be prepared for the Mountains and beyond!"
+    "tag_title": "Your travel website",
+    "welcome_bg_title": "The Best Tour Tips for the Far North of the Earth!",
+
+    "card_trips": {
+        "card_pre_title_1": "A destination for heaven",
+        "card_title_1": "Window of Heaven (MG)",
+        "card_description_1": "The Window of Heaven Circuit Trail is one of the attractions that are in the Ibitipoca State Park, in Minas Gerais, and provides one of the most beautiful views in the state, with vegetation and mountains. If you're volunteering there, it'll be even easier to explore the trail during your free time.<br><br>The walk lasts for 8 km until reaching the viewpoint, which is on top of a waterfall amid incredible landscapes, making every step along the way worth it. The trail doesn't have many obstacles, but some parts are steep and can become very tiring for those inexperienced.",
+
+        "card_pre_title_2": "your first destination",
+        "card_title_2": "Mount Roraima (RO)",
+        "card_description_2": "The mountain is located between the borders of Brazil, Venezuela and Guyana and is one of the seven highest in the country. In the area there is a mix of cliffs, caves, rainforest at the base and plateau at the top, but many parts of this Brazilian paradise are still unexplored.<br><br>There are different types of expeditions through Mount Roraima, which can last up to seven days between ascent and descent from the peak. However, on the way you can get to know important points of the mountain such as the Triple Frontier and Mirante do Índio, for example.",
+        
+        "card_pre_title_3": "A destination to the top",
+        "card_title_3": "Paraná Peak (PR)",
+        "card_description_3": "Considered the highest mountain in southern Brazil, Pico Paraná is in the middle of the Atlantic Forest in Serra do Mar. The trail to Pedra do Cume is well signposted, it's not too complicated, but adventurers need physical preparation.<br><br>On the trail there are trims like ropes to help those who have some difficulty in moving. It is also possible to camp on site."
+    },
+
+    "footer_disclaimer": "Get out there & discover your next slope, mountain & destination!",
+    "footer_links": {
+        "More_on_The_Blog": "More on The Blog",
+        "About_TRIPER": "About TRIPER",
+        "contributors_writers": "Contributors & Writers",
+        "write_for_us": "Write For Us",
+        "contact_us": "Contact Us",
+        "privacy_policy": "Privacy Policy",
+        "more_on_TRIPER": "More on TRIPER",
+        "the_team": "The Team",
+        "Jobs": "Jobs",
+        "Press": "Press"
+    }
 }

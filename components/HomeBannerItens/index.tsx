@@ -1,9 +1,23 @@
 import Styles from '../../styles/HomeBannerItens.module.css'
-import { ImNewspaper } from 'react-icons/im'
+import { IoLanguageOutline } from 'react-icons/io5'
 import { useTranslation } from "react-i18next";
+import i18n from 'i18next'
+import { useState, useEffect } from 'react';
 
 const HomeBannerItens = () => {
+    const [showLangs, setShowLangs] = useState(false)
+
+    const choseLang = () => {
+        setShowLangs(!showLangs)
+    }
+
+    const changeLang = (newLang: string) => {
+        i18n.changeLanguage(newLang)
+    }
+
     const { t } = useTranslation();
+
+    const langs = ['pt', 'en']
 
     return (
         <div>
@@ -13,17 +27,33 @@ const HomeBannerItens = () => {
                 </div>
 
                 <div className={Styles.headerItensGrid}>
-                    <button className={Styles.perfectButtonHEader}>
-                        <ImNewspaper size={30} color="#fff" />
-                        <span className={Styles.mainBannerLabel}>News Letter</span>
-                    </button>
+                    <div className={Styles.selectContainerLang}>
+                        <button onClick={() => {choseLang()}}> 
+                            <IoLanguageOutline size={20} color="#fff" />
+                            <p>{i18n.language}</p>
+                        </button>
+                    </div>
+
+                    { showLangs && langs &&                        
+                        <div className={Styles.containerAvailbleLangs}>
+                            {langs.map((item) => {
+                                return (
+                                    <button onClick={() => {changeLang(item)}}>
+                                        <p>{item}</p>
+                                    </button>
+                                )
+                            })}
+                        </div>
+                    }
+
+                        {/* <span className={Styles.mainBannerLabel}></span> */}
                 </div>
             </div>
 
             <div className={Styles.containerBannerItem}>
                 <div className={Styles.containerDashItemBanner}>
                     <hr className={Styles.dashTitleBanner}/>
-                    <span className={Styles.nextDashTitleBanner} >A Hiking guide</span>
+                    <span className={Styles.nextDashTitleBanner} >{t('tag_title')}</span>
                 </div>
 
                 <div className={Styles.containerTitleMainBanner}>

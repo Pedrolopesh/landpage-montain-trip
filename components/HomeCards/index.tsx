@@ -1,7 +1,12 @@
 import Styles from '../../styles/HomeCards.module.css'
 import type { ICardContent } from '../../typings/mainTypes'
+import { useTranslation } from "react-i18next";
+import { useState, useEffect } from 'react'
 
 const HomeCards = () => {
+    const [renderAfterLang, setRenderAfterLang] = useState(false)
+
+    const { t } = useTranslation();
 
     const CardText = ({ index, dashTitle, titleCard, contentCard }: ICardContent) => {
         return (
@@ -14,12 +19,12 @@ const HomeCards = () => {
                     <div className={Styles.containerCardContent}>
                         <div className={Styles.containerContentTitleCard}>
                             <hr className={Styles.dashCardTitle}/>
-                            <span className={Styles.nextDashTitleCardd} >{dashTitle}</span>
+                            <span className={Styles.nextDashTitleCardd} dangerouslySetInnerHTML={{ __html: t(dashTitle) }}></span>
                         </div>
 
                         <div className={Styles.containerContentCard}>
-                            <h1>{titleCard}</h1>
-                            <p>{contentCard}</p>
+                            <h1 dangerouslySetInnerHTML={{ __html: t(titleCard) }}></h1>
+                            <p dangerouslySetInnerHTML={{ __html: t(contentCard) }}></p>
                         </div>
                     </div>
                 </div>
@@ -30,29 +35,33 @@ const HomeCards = () => {
 
     const itens = [
         {
-            dashTitle: 'Get Started',
-            titleCard: 'What level of hiker are you?',
-            contentCard: 'Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker?',
+            dashTitle: 'card_trips.card_pre_title_1',
+            titleCard: 'card_trips.card_title_1',
+            contentCard: 'card_trips.card_description_1',
             imageCard: 'https://res.cloudinary.com/publi-node-uploads/image/upload/v1645976809/landing-montain/01_howfze.png',
         },
         {
-            dashTitle: 'Hiking Essentials',
-            titleCard: 'Picking the right Hiking Gear!',
-            contentCard: 'The nice thing about beginning hiking is that you don’t really need any special gear, you can probably get away with things you already have. Let’s start with clothing. A typical mistake hiking beginners make is wearing jeans and regular clothes, which will get heavy and chafe wif they get sweaty or wet.',
+            dashTitle: 'card_trips.card_pre_title_2',
+            titleCard: 'card_trips.card_title_2',
+            contentCard: 'card_trips.card_description_2',
             imageCard: 'https://res.cloudinary.com/publi-node-uploads/image/upload/v1645965431/landing-montain/02_rbzrrs.png',
         },
         {
-            dashTitle: 'where you go is the key',
-            titleCard: 'Understand Your Map & Timing',
-            contentCard: 'To start, print out the hiking guide and map. If it’s raining, throw them in a Zip-Lock bag. Read over the guide, study the map, and have a good idea of what to expect. I like to know what my next landmark is as I hike. For example, I’ll read the guide and know that say, in a mile, I make a right turn at the junction..',
+            dashTitle: 'card_trips.card_pre_title_3',
+            titleCard: 'card_trips.card_title_3',
+            contentCard: 'card_trips.card_description_3',
             imageCard: 'https://res.cloudinary.com/publi-node-uploads/image/upload/v1645977814/landing-montain/03_new_size_mfgqpn.png',
         }
     ]
 
+    useEffect(() => {
+        setRenderAfterLang(true)
+    }, [useTranslation])
+
     return (
         <>
             <div className={Styles.containerCards}>
-                {itens.map((item: ICardContent, index: number) => {
+                {renderAfterLang && itens.map((item: ICardContent, index: number) => {
                     return (
                     <div key={index} className={Styles.flexLayoutCards}>
                         <div className={Styles.contentCard}>
