@@ -36,9 +36,9 @@ const HomeBannerItens = () => {
 
                     { showLangs && langs &&                        
                         <div className={Styles.containerAvailbleLangs}>
-                            {langs.map((item) => {
+                            {langs.map((item, index) => {
                                 return (
-                                    <button onClick={() => {changeLang(item)}}>
+                                    <button key={index} onClick={() => {changeLang(item)}}>
                                         <p>{item}</p>
                                     </button>
                                 )
