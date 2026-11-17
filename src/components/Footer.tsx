@@ -6,7 +6,8 @@ export function Footer({ lang }: { lang: Lang }) {
     <footer className="footer">
       <div className="wrap">
         <div className="big" aria-hidden="true">
-          TRIPER
+          <span>BÚSSOLA</span>
+          <span>DAS TRILHAS</span>
         </div>
         <div className="cols">
           <div>

@@ -1,4 +1,6 @@
-# Triper
+# Bússola das Trilhas
+
+(antes chamado Triper)
 
 Guia de trilhas e montanhas do Brasil: seis rotas, do nascer do sol no Caparaó ao Pico da Neblina, com dificuldade, duração, melhor época e uma lista do que levar.
 
