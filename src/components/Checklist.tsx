@@ -31,13 +31,15 @@ export function Checklist({ lang }: { lang: Lang }) {
           </svg>
           <strong>{pct}%</strong>
         </div>
-        <p aria-live="polite">{d.progress(done, TOTAL)}</p>
-        {done === TOTAL ? <p className="done">{d.ready}</p> : null}
-        {done > 0 ? (
-          <button type="button" className="reset" onClick={clear}>
-            {d.reset}
-          </button>
-        ) : null}
+        <div className="meter-text">
+          <p aria-live="polite">{d.progress(done, TOTAL)}</p>
+          {done === TOTAL ? <p className="done">{d.ready}</p> : null}
+          {done > 0 ? (
+            <button type="button" className="reset" onClick={clear}>
+              {d.reset}
+            </button>
+          ) : null}
+        </div>
       </div>
       <div className="groups">
         {CHECKLIST.map((g) => (
