@@ -1,4 +1,4 @@
-/* Triper · identidade original (azul-noite + dourado), refeita com tokens. */
+/* Bússola das Trilhas · identidade original (azul-noite + dourado), refeita com tokens. */
 :root {
   --bg: #0b1d26;
   --bg-2: #0f2530;
@@ -883,6 +883,10 @@ svg {
   font-size: 34px;
   font-weight: 500;
 }
+.meter-text {
+  display: grid;
+  gap: 10px;
+}
 .meter p {
   color: var(--muted);
 }
@@ -1011,6 +1015,10 @@ svg {
   transform: translateX(-4px);
 }
 .detail-hero h1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px; /* a sigla do estado não ganha recuo quando quebra de linha */
   margin-top: 26px;
   font-size: clamp(48px, 8vw, 104px);
   animation: fade-up 0.8s var(--ease) both;
@@ -1024,8 +1032,6 @@ svg {
   animation: fade-up 0.8s 0.1s var(--ease) both;
 }
 .detail-hero .uf {
-  margin-left: 14px;
-  vertical-align: middle;
   font-family: var(--font-body), sans-serif;
   font-size: 14px;
 }
@@ -1203,15 +1209,29 @@ svg {
   border-top: 1px solid var(--line);
   overflow: hidden;
 }
+/* Marca em duas linhas, cada uma do tamanho exato da coluna (unidades de container),
+   para o nome longo nunca passar da margem. */
 .footer .big {
+  container-type: inline-size;
   font-family: var(--font-display), serif;
-  font-size: clamp(72px, 19vw, 260px);
   font-weight: 600;
-  line-height: 0.8;
+  line-height: 0.86;
   letter-spacing: 0.06em;
+  white-space: nowrap;
   color: transparent;
   -webkit-text-stroke: 1px var(--line-strong);
   user-select: none;
+}
+.footer .big span {
+  display: block;
+  font-size: var(--fs);
+}
+.footer .big span:first-child {
+  --fs: 21.3cqi;
+  padding-top: 0.12em; /* espaço para o acento do Ú */
+}
+.footer .big span:last-child {
+  --fs: 14.8cqi;
 }
 .footer .cols {
   display: flex;
@@ -1390,7 +1410,6 @@ svg {
     align-items: center;
   }
   .meter .ring {
-    grid-row: span 3;
     width: 110px;
     height: 110px;
   }

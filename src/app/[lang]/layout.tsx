@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: LayoutProps<"/[lang]">): Prom
   const d = DICTS[lang].meta;
   return {
     metadataBase: new URL("https://tripper-landing.netlify.app"),
-    title: { default: d.title, template: `%s · Triper` },
+    title: { default: d.title, template: `%s · Bússola das Trilhas` },
     description: d.description,
     alternates: { canonical: `/${lang}/`, languages: { "pt-BR": "/pt/", en: "/en/" } },
     openGraph: { title: d.title, description: d.description, images: ["/img/aurora-poster.webp"], locale: lang === "pt" ? "pt_BR" : "en_US" },

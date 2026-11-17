@@ -26,8 +26,8 @@ export function Header({ lang }: { lang: Lang }) {
         {d.nav.skip}
       </a>
       <div className="wrap bar">
-        <Link className="logo" href={`/${lang}/`} aria-label="Triper">
-          TRIPER<span>.</span>
+        <Link className="logo" href={`/${lang}/`} aria-label="Bússola das Trilhas">
+          BÚSSOLA<span>.</span>
         </Link>
         <nav className="nav" aria-label="Principal">
           <Link className="link" href={`/${lang}/#destinos`}>

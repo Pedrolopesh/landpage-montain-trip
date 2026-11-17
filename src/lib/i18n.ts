@@ -7,7 +7,7 @@ export function isLang(value: string): value is Lang {
 
 const pt = {
   meta: {
-    title: "Triper · Trilhas e montanhas do Brasil",
+    title: "Bússola das Trilhas · Trilhas e montanhas do Brasil",
     description:
       "Seis rotas de montanha pelo Brasil, do Caparaó ao Pico da Neblina, com dificuldade, duração, melhor época e o que levar.",
   },
@@ -103,7 +103,7 @@ type Dict = typeof pt;
 
 const en: Dict = {
   meta: {
-    title: "Triper · Trails and mountains of Brazil",
+    title: "Bússola das Trilhas · Trails and mountains of Brazil",
     description:
       "Six mountain routes across Brazil, from Caparaó to Pico da Neblina, with difficulty, duration, best season and what to pack.",
   },

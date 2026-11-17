@@ -3,7 +3,7 @@ import Link from "next/link";
 import "./globals.css";
 import { body, display } from "./fonts";
 
-export const metadata: Metadata = { title: "404 · Triper" };
+export const metadata: Metadata = { title: "404 · Bússola das Trilhas" };
 
 /** 404 único para os dois idiomas (o site não sabe o idioma de uma URL desconhecida). */
 export default function GlobalNotFound() {
